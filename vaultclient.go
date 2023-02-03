@@ -45,8 +45,9 @@ func GetKV2Secret(kv2Path, kv2Name string) (string, error) {
 
 	kv2SecretJSON, err := json.Marshal(kv2Secret)
 	if err != nil {
-		return "", err
+		return "Error", err
 	}
+	println(json.Marshal(kv2Secret))
 
 	return string(kv2SecretJSON), nil
 }

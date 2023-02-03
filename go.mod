@@ -1,4 +1,4 @@
-module vault_lib_v2
+module github.com/lms060/vaultclient
 
 go 1.19
 
